@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+celery
+redis
+sse-starlette
+pydantic-settings
+python-dotenv
+crewai
+langchain-openai
+tavily-python
+beautifulsoup4
+fake-useragent
+requests
+python-socketio

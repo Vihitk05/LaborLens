@@ -1,0 +1,10 @@
+# Python virtual environment and environment files
+backend/venv/
+backend/.env
+
+# Python cache files (recursive, for all __pycache__ folders)
+**/__pycache__/
+
+# Node.js and Next.js build files
+job-market-frontend/node_modules/
+job-market-frontend/.next/
