@@ -21,12 +21,16 @@ def tavily_search(query: str) -> str:
     """Search for job market data using Tavily API"""
     from langchain_tavily import TavilySearch
     tavily = TavilySearch(api_key=os.getenv("TAVILY_API_KEY"))
+    end_date = str(datetime.now().strftime("%Y-%m-%d"))
+    start_date = str((datetime.now() - timedelta(days=90)).strftime("%Y-%m-%d"))
     return tavily.run({
         "query": query,
         "search_depth": "advanced",
         "include_domains": ["linkedin.com", "indeed.com", "glassdoor.com", "naukri.com"],
         "max_results": 15,
-        "include_answer": True
+        "include_answer": True,
+        "start_date":start_date,
+        "end_date":end_date
     })
 
 @CrewBase

@@ -290,7 +290,7 @@ export default function JobMarketAnalysis() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                LaborLens AI
+                LaborLens
               </h1>
               <p className="text-gray-600 max-w-2xl">
                 Advanced Job Market Intelligence Platform
@@ -590,7 +590,7 @@ export default function JobMarketAnalysis() {
               <CardContent className="h-full">
               <div ref={reportRef} className="space-y-6" style={{
                 width: '100%',
-                maxWidth: '800px', // Constrain width for better PDF rendering
+                // maxWidth: '800px', // Constrain width for better PDF rendering
                 wordWrap: 'break-word',
                 overflowWrap: 'break-word',
                 whiteSpace: 'pre-wrap'
